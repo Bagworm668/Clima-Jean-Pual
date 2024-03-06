@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="Diseño.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CLIMA</title>
+    
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1 id="titulo" class="text-4xl mt-5 text-white font-style uppercase text-center">API CLIMA</h1>
+        <div class="max-w-lg mx-auto">
+            <div class="p-6 mt-10">
+                <div id="temperatura" class="text-center mt-6"></div>
+                <div id="resultado">
+                    <p class="text-center text-white mt-6">¡Aviso importante! Agregar la ciudad</p>
+                </div>
+            </div>
+            <form id="formulario" class="mt-10" action="#" method="POST">
+                <div class="mt-15">
+                    <input
+                        type="text"
+                        name="ciudad"
+                        id="ciudad"
+                        placeholder="Ciudad"
+                        class="w-full p-2 rounded"
+                    />
+                </div>
+                <div class="mt-5">
+                    <select class="block" id="pais">
+                        <option disabled selected value="">Seleccione el país</option>
+                        <option value="AR">ARGENTINA</option>
+                        <option value="CO">COLOMBIA</option>
+                        <option value="CR">COSTA RICA</option>
+                        <option value="ES">ESPAÑA</option>
+                        <option value="US">ESTADOS UNIDOS</option>
+                        <option value="AU">AUSTRALIA</option>
+                        <option value="BR">BRASIL</option>
+                        <option value="CA">CANADÁ</option>
+                        <option value="CL">CHILE</option>
+                        <option value="CN">CHINA</option>
+                        <option value="EG">EGIPTO</option>
+                        <option value="FR">FRANCIA</option>
+                        <option value="DE">ALEMANIA</option>
+                        <option value="IT">ITALIA</option>
+                        <option value="JP">JAPÓN</option>
+                        <option value="KR">COREA DEL SUR</option>
+                        <option value="NL">PAÍSES BAJOS</option>
+                        <option value="NZ">NUEVA ZELANDA</option>
+                        <option value="PE">PERÚ</option>
+                        <option value="PT">PORTUGAL</option>
+                        <option value="SA">ARABIA SAUDITA</option>
+                        <option value="ZA">SUDÁFRICA</option>
+                        <option value="ES">ESPAÑA</option>
+                        <option value="SE">SUECIA</option>
+                        <option value="CH">SUIZA</option>
+                        <option value="GB">REINO UNIDO</option>
+                        <option value="UY">URUGUAY</option>
+                        <option value="VE">VENEZUELA</option>                       
+                    </select>                    
+                </div>
+                
+                <div class="mt-5">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        ConsultarClima
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

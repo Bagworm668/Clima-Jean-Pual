@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const prevPageButton = document.getElementById('prevPage');
   const nextPageButton = document.getElementById('nextPage');
   let currentPage = 1;
-  const resultsPerPage = 10;
+  const resultsPerPage = 12;
   let totalResults = 0;
 
   searchForm.addEventListener('submit', function(event) {
